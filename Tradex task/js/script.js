@@ -44,7 +44,7 @@ window.onscroll = function(){
 }*/
 
 // form validation
-document.getElementById("formSubmit").addEventListener("click", function (event) {
+document.getElementById("inputForm").addEventListener("onsubmit", function (event) {
     // prevent the submission
     // what happens when we click on submit
     if (booleanName && booleanEmail && booleanPassword) {
