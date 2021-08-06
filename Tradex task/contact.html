@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- using bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="d-none d-lg-block custom-blue-bg">
+        <div class="container text-white flex-wrap">
+            <div class="row justify-content-between">
+                <div class="row col-7 my-3 align-items-start">
+                    <!-- the icons div -->
+                    <div class="col-3 border-end text-end">
+                        <a href="#"><i class="fab fa-facebook-f text-white me-3"></i></a>
+                        <a href="#"><i class="fab fa-twitter text-white me-3"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white me-3"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white me-3"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g text-white"></i></a>
+                    </div>
+
+                    <!-- the location -->
+                    <div class="col-lg-8">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <p class="d-inline-block my-0"> 267 Park Avenue New York, NY 90210</p>
+
+                    </div>
+                </div>
+                <div class="row col-4 my-3 text-end justify-content-end">
+                    <div class="col-lg-5 border-end text-end pe-4">
+                        <i class="far fa-envelope me-2"></i>
+                        <p class="d-inline-block my-0">Quick Email</p>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <i class="fas fa-phone-volume me-2"></i>
+                        <p class="d-inline-block my-0"> +1 (409) 987–5874</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- sticky navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light text-uppercase shadow sticky-top bg-white">
+        <div class="container justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="images/Trade-X-Logo.png" alt="Trade-X-Logo">
+            </a>
+            <!-- this is for when the screen is small it collapses the nav bar into a button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-end pb-4" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <!-- home with a dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Home01</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Home02</a></li>
+                        </ul>
+                    </li>
+                    <!-- about -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">about</a>
+                    </li>
+                    <!-- headers with a dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            headers
+                        </a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Header style 1</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Header style 2</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Header style 3</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Header style 4</a></li>
+
+                        </ul>
+                    </li>
+                    <!-- blog posts -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            blog posts
+                        </a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">blog grid</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">blog mansonary</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">classic</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">blog detail</a></li>
+
+                        </ul>
+                    </li>
+                    <!-- services -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            services
+                        </a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">full width</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">service 2 column</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">service 3 column</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">service 4 column</a></li>
+                        </ul>
+                    </li>
+                    <!-- features -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            features
+                        </a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">shotcodes</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">feature 2 column</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">feature 3 column</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">feature 4 column</a></li>
+                        </ul>
+                    </li>
+                    <!-- pages -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            pages
+                        </a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">shotcodes</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">feature 2 column</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">feature 3 column</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">feature 4 column</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- the background image section -->
+    <section class="bg-img-contact">
+        <div class="bg-overlay text-center position-relative">
+            <h1 class="text-white">Contact</h1>
+            <div class="position-absolute w-100 custom-contact-overlay">
+                <a href="index.html" class="text-white text-decoration-none">HOME <span class="ms-3">></span></a>
+                <span class="text-secondary ms-2">CONTACT</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="bg-white py-5">
+        <div class="container py-5">
+            <!-- the header -->
+            <div class="row my-5 text-center mx-auto justify-content-center">
+                <div class="col-1 custom-blue-text text-end pe-0">
+                    <hr class="ms-auto w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+                <div class="col-2">
+                    <h2 class="text-capitalize text-center">Contact Info</h2>
+                </div>
+                <div class="col-1 custom-blue-text ps-0">
+                    <hr class="w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+            </div>
+            <!-- the contact info -->
+            <div class="row text-center justify-content-between">
+                <div class="col-sm-6 col-lg-4">
+                    <i class="fas fa-map-marker-alt custom-blue-text fs-1 d-block pb-3"></i>
+                    <p class="text-dark fw-bold fs-5">Address</p>
+                    <p class="text-secondary">267-A , Street Name Park Sera Avenue , New York, NY 90210</p>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <i class="fas fa-phone-volume custom-blue-text fs-1 d-block pb-3"></i>
+                    <p class="text-dark fw-bold fs-5">Call Us</p>
+                    <p class="text-secondary">Phone 1 : (+098) 7654 3210</p>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <i class="far fa-envelope custom-blue-text fs-1 d-block pb-3"></i>
+                    <p class="text-dark fw-bold fs-5">Email</p>
+                    <p class="text-secondary">support@company.com</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Get In Touch section -->
+    <!-- form section -->
+    <section class="bg-white pb-5">
+        <div class="container">
+            <!-- the heading -->
+            <div class="row my-5 text-center mx-auto justify-content-center">
+                <div class="col-1 custom-blue-text text-end pe-0">
+                    <hr class="ms-auto w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+                <div class="col-2">
+                    <h2 class="text-capitalize text-center">Get In Touch</h2>
+                </div>
+                <div class="col-1 custom-blue-text ps-0">
+                    <hr class="w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+            </div>
+            <!-- the form -->
+            <form class="pt-2">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 border-bottom border-dark position-relative px-3 contact-form-div">
+                        <i class="far fa-user position-absolute contact-form-icon fs-4"></i>
+                        <input type="text" name="Name" placeholder="Name" id="formName"
+                            class="border-0 fs-5 w-100 px-4 pb-2">
+                        <span class="d-inline-block text-danger py-2"></span>
+                    </div>
+                    <div class="col-lg-3 border-bottom border-dark position-relative px-3 contact-form-div">
+                        <i class="far fa-envelope position-absolute contact-form-icon fs-4"></i>
+                        <input type="email" name="Email" placeholder="Email" id="formEmail"
+                            class="border-0 fs-5 w-100 px-4 pb-2">
+                        <span class="d-inline-block text-danger py-2"></span>
+
+                    </div>
+                    <div class="col-lg-3 border-bottom border-dark position-relative px-3 contact-form-div">
+                        <i class="fas fa-pencil-alt position-absolute contact-form-icon fs-4"></i>
+                        <input type="password" name="Password" placeholder="Password" id="formPassword"
+                            class="border-0 fs-5 w-100 px-4 pb-2">
+                        <span class="d-inline-block text-danger py-2"></span>
+
+                    </div>
+                    <div class="col mt-4 border-bottom border-dark position-relative contact-form-div">
+                        <i class="fas fa-pencil-alt position-absolute icon-textarea fs-4"></i>
+                        <textarea name="msg" placeholder="Your Message" cols="144" rows="10"
+                            class="border-0 fs-5 ps-4"></textarea>
+                    </div>
+                    <div class="col ps-0">
+                        <submit class="btn custom-blue-bg btn text-white rounded-pill mt-4 px-4 fw-bold"
+                            id="formSubmit" href="#" role="button">Send Message</submit>
+                        <span class="d-block text-danger py-2"></span>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- If You Like This Grate Work ?? For You Site...section -->
+    <section class="custom-blue-bg py-5">
+        <div class="container position-relative mx-auto row justify-content-between align-items-center text-white">
+            <div class="col-7 p-0">
+                <i class="fas fa-phone-volume position-absolute telephone-icon"></i>
+                <p class="fs-2 m-0">If You Like This Grate Work ?? For You Site...</p>
+            </div>
+            <div class="col-3 text-end pe-0 pb-3">
+                <a class="btn bg-white btn btn-outline-primary custom-blue-text rounded-pill mt-4 px-4 fw-bold" href="#"
+                    role="button">Purchase Now</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- the footer section -->
+    <footer class="custom-black-bg py-5">
+        <div class="container pb-5 text-white">
+            <div class="row justify-content-between">
+                <div class="col-lg-3">
+                    <h2>Contact Info</h2>
+                    <hr class="custom-hr-bottom w-25 custom-blue-text">
+                    <p class="fw-light pt-2">
+                        <i class="fas fa-map-marker-alt pe-1"></i>
+                        123 Street Market, Life Plaza, New York
+                    </p>
+                    <p class="fw-light pt-2">
+                        <i class="fas fa-phone-volume pe-1"></i>
+                        987654321
+                    </p>
+                    <p class="fw-light pt-2">
+                        <i class="far fa-envelope pe-1"></i>
+                        team@gmail.com
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <h2>Posts</h2>
+                    <hr class="custom-hr-bottom w-25 custom-blue-text">
+                    <div class="row border-bottom border-secondary justify-content-between mb-4 pb-4 pt-2">
+                        <div class="col-lg-4">
+                            <a href="#"><img src="images/gallery2-1-360x260.png" class="h-100 w-100"></a>
+
+                        </div>
+                        <div class="col-lg-8">
+                            <p class="mb-1"><a href="#" class="text-decoration-none text-white fw-bold">Four ways to
+                                    cheer and plan your self up on Blue</a> </p>
+                            <p class="text-secondary mb-0"><i class="far fa-calendar-alt pe-1"></i> December 19, 2018
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a href="#"><img src="images/bg3-360x260.jpg" class="h-100 w-100"></a>
+
+                        </div>
+                        <div class="col-lg-8">
+                            <p class="mb-1"><a href="#" class="text-decoration-none text-white fw-bold">Four ways to
+                                    cheer and plan your self up on Blue</a> </p>
+                            <p class="text-secondary mb-0"><i class="far fa-calendar-alt pe-1"></i> December 19, 2018
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <h2>Popular</h2>
+                    <hr class="custom-hr-bottom w-25 custom-blue-text">
+                    <div class="row pt-5">
+                        <div class="col-4">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Accountancy</a>
+                        </div>
+                        <div class="col-3">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Affiliate</a>
+                        </div>
+                        <div class="col-3">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Branding</a>
+                        </div>
+                    </div>
+                    <div class="row pt-3 justify-content-between">
+                        <div class="col-3">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Construction</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Design</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Drupal</a>
+                        </div>
+                        <div class="col-3">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Education</a>
+                        </div>
+
+                    </div>
+                    <div class="row pt-3 justify-content-between">
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Graphics</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Joomla</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dar custom-small-font" href="#"
+                                role="button">Marketing</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Money</a>
+                        </div>
+
+                    </div>
+                    <div class="row pt-3 justify-content-between">
+                        <div class="col-1">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Tally</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Transform</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Website</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Wordpress</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- the second footer -->
+    <footer class="custom-black-bg py-4 custom-blue-text fw-bold custom-box-shadow1 text-center">
+        <p class="m-0">© 2019 Developed By DTM Theme</p>
+    </footer>
+    <!-- the fixed arrow up button -->
+    <div class="position-fixed rounded-circle custom-blue-bg p-2 fs-2 text-center arrow-up">
+        <a href="index.html" class="text-decoration-none"><i class="fas fa-chevron-up text-white d-block"></i></a>
+    </div>
+
+
+    <!-- ************************************************** -->
+    <!-- linking bootstrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- linking script.js file -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

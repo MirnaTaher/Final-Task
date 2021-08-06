@@ -1,0 +1,568 @@
+/* changing the container class
+.container {
+  width: 75%;
+} */
+.custom-box-shadow {
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.568);
+}
+/* header */
+.custom-blue-text {
+  color: #0c65ed;
+}
+.custom-blue-bg {
+  background-color: #0c65ed;
+}
+/**************************************************/
+/* start of navbar */
+.navbar-light .navbar-nav .nav-link {
+  color: black !important;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0c65ed !important;
+}
+/* removing the outline when it focus (i don't know why it works but i tried it and it works :"D) */
+.navbar-toggler,
+.navbar-light {
+  color: white !important;
+}
+/* when we hover over the link, the drop down shows */
+
+.nav-item:hover .dropdown-menu {
+  display: block !important;
+}
+.dropdown-menu {
+  border-top: solid#0c65ed;
+  border-radius: 0;
+}
+
+/* end of navbar */
+/**************************************************/
+/* start of carousel section */
+/* background color overlay */
+.bg-overlay {
+  background-color: rgb(0 0 0 / 78%);
+  height: 100%;
+}
+.bg-overlay h1 {
+  box-sizing: border-box;
+  padding-top: 15%;
+}
+/* buttons */
+.btn-outline-light:hover {
+  background-color: #0c65ed;
+  color: white;
+  border: #0c65ed;
+}
+.btn-primary {
+  background-color: #0c65ed;
+}
+.custom-height {
+  height: 38rem !important;
+}
+/* adjusting the bootstrap class for the carousel's buttons */
+.carousel-indicators [data-bs-target] {
+  height: 7px;
+  width: 7px;
+  background-color: white;
+  opacity: 1;
+  margin:0 0.3%;
+  /* border: white solid; */
+}
+.carousel-indicators [data-bs-target]:focus,
+.carousel-indicators [data-bs-target]:hover,
+.carousel-indicators .active {
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.carousel-indicators {
+  transform: rotate(90deg);
+  right: -95%;
+  bottom: 40%;
+  align-items: center;
+}
+.carousel-indicators:focus {
+  text-align: center;
+}
+
+/* end of carousel section */
+/**************************************************/
+.custom-hr-top {
+  height: 3px !important;
+  opacity: 100%;
+}
+.custom-hr-bottom {
+  height: 1.7px !important;
+  opacity: 100%;
+}
+.custom-btn {
+  border-radius: 25px;
+}
+@media screen and (max-width: 1400px) {
+  .custom-card-position {
+    top: 23%;
+    left: 1%;
+    width: 30% !important;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .custom-card-position {
+    position:unset !important;
+    width: 100% !important;
+    margin-bottom: 2% !important;
+    margin:auto;
+  }
+  .about-us-div{
+    width: 100% !important;
+  }
+}
+
+/* the numbers section */
+.custom-gray-bg {
+  background-color: #f9f9f9;
+}
+/* start of our services section */
+.custom-bg-img {
+  background-image: url(../images/f97a7580-1a20-11eb-b7ff-b26a1ad43bff.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+}
+.custom-card-size {
+  padding-top: 7%;
+  width: 30%;
+  height: 17rem;
+  overflow: hidden;
+}
+@media screen and (max-width:2000px) {
+  .custom-card-size {
+    padding-top: 7%;
+    width: 30%;
+    height: 17rem;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width:1200px) {
+  .custom-card-size {
+    padding-top: 7%;
+    width: 47%;
+    height: 17rem;
+    overflow: hidden;
+  }
+}
+.custom-appearing-card {
+  top: 100%;
+  left: 0%;
+  background-color: white;
+  border: solid white;
+}
+.custom-card-size:hover .custom-appearing-card {
+  top: 0;
+}
+
+/* end of services section */
+/* start of our work section */
+.custom-width-40 {
+  width: 40%;
+}
+li a {
+  color: inherit;
+}
+.list-group-item {
+  border: none !important;
+}
+.list-group-item:hover {
+  color: #0c65ed;
+}
+#allLi {
+  color: #0c65ed;
+}
+@media screen and (max-width:2000px) {
+  .custom-card-size2{
+    width: 32%;
+    height: 27rem;
+  }
+}
+@media screen and (max-width:1200px) {
+  .custom-card-size2 {
+    width: 47%;
+    height: 27rem;
+  }
+}
+
+
+
+.custom-card-size2:hover {
+  box-shadow: 0 0 19px rgba(128, 128, 128, 0.568);
+}
+.custom-div {
+  background-color: #0c66ed98;
+  width: 0;
+  left: 47%;
+  bottom: 3%;
+  visibility: hidden;
+}
+.custom-card-size2:hover .custom-div{
+  visibility: visible;
+  left: 8.5%;
+  width: 88%;
+}
+/* start of our creative team section */
+@media screen and (max-width: 2000px){
+  .custom-card-size3 {
+    height: 24rem;
+    width: 32%;
+    overflow: hidden;
+  }
+  .custom-appearing-card2 {
+    bottom: -30.1%;
+    left: 0;
+    padding-bottom: 11%;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.568);
+  }
+}
+@media screen and (max-width: 1400px){
+  .custom-appearing-card2{
+    bottom: -29.1%;
+  }
+}
+@media screen and (max-width: 1200px){
+  .custom-card-size3 {
+    height: 24rem;
+    width: 47%;
+    overflow: hidden;
+  }
+  .custom-appearing-card2{
+    bottom: -26.1%;
+  }
+}
+@media screen and (max-width: 988px){
+  .custom-appearing-card2{
+    bottom: -28.1%;
+
+  }
+}
+@media screen and (max-width: 768px){
+  .custom-card-size3 {
+    height: 24rem;
+    width: 80%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .custom-appearing-card2{
+    bottom: -30.1%;
+
+  }
+}
+
+
+.custom-hr {
+  height: 2.5px !important;
+  opacity: 1;
+}
+/* when we hover over the bigger div */
+
+.custom-card-size3:hover .custom-appearing-card2 {
+  bottom: 0;
+}
+.custom-card-size3:hover .custom-hr {
+  visibility: hidden;
+}
+.custom-card-small-div {
+  bottom: -25%;
+  left: 13%;
+}
+.custom-card-size3:hover .custom-card-small-div {
+  bottom: 0;
+  left: 13%;
+  transition-delay: 0.3s;
+  transition-duration: 0.35s;
+}
+.custom-h5:hover {
+  color: #0c65ed !important;
+}
+.custom-card-size3 p {
+  font-size: 0.8rem;
+}
+/* when we hover over every single a element */
+.custom-card-link:hover {
+  color: black !important;
+}
+
+/* start of our pricing style */
+.btn-outline-primary {
+  border-color: #0c65ed;
+}
+.btn-outline-primary:hover {
+  color: #0c65ed;
+}
+/* .custom-btn-border1{
+  border:none !important;
+  border-left: 50px !important;
+  border-right:none !important;
+  border-color: #0c65ed !important;
+} */
+
+.not-rounded {
+  border-radius: 0 !important;
+}
+/* end of our pricing style*/
+
+
+/* start of Testimonial section */
+.owl-next, .owl-prev{
+  font-size: 1.5rem !important;
+  /* height: 3rem; */
+  color:white !important;
+  /* margin-top:2% !important; */
+
+}
+.owl-next{
+  border-left: white 5px solid !important;
+  margin: 0 !important;
+  border-radius:0 !important;
+}
+.owl-prev{
+  border-right: white 5px solid !important;
+  margin:0 !important;
+  border-radius:0 !important;
+
+}
+.owl-nav{
+  background-color: #0c65ed !important;
+  width:8%;
+  margin:3% auto !important;
+  border-radius: 25px;
+}
+
+
+/* end of Testimonial section */
+
+
+/* start of Subscribe now for news */
+.custom-black-bg {
+  background-color: #1a1a1a;
+}
+/* end of Subscribe now for news */
+
+/* start of latest blog section */
+
+
+@media (max-width: 2000px) {
+  .custom-card-size-blog {
+    width: 32%;
+    overflow: hidden;
+    /* height: 32rem; */
+  }
+}
+@media (max-width: 1500px) {
+  .custom-card-size-blog {
+    width: 33%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1200px) {
+  .custom-card-size-blog {
+    width: 48%;
+    overflow: hidden;
+    /* height: 30rem; */
+  }
+  .custom-width-15 {
+    width: 10%;
+    font-size: 1.2em;
+    /* height: 100% */
+    align-self: stretch;
+  }
+}
+@media (max-width: 1020px) {
+  .custom-card-size-blog {
+    width: 60%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 30rem; */
+  }
+}
+@media (max-width: 800px) {
+  .custom-card-size-blog {
+    width: 80%;
+    overflow: hidden;
+    /* height: 30rem; */
+  }
+}
+.card-img-top img {
+  width: 100%;
+}
+.card-img-top {
+  overflow: hidden;
+}
+.custom-width-15 {
+  width: 12%;
+  font-size: 1.2em;
+  /* height: 100% */
+  align-self: stretch;
+}
+.little-arrow {
+  bottom: 11%;
+  right: 31%;
+}
+.custom-small-font {
+  font-size: 0.8rem;
+}
+.expanding-hr {
+  width: 32%;
+  opacity: 1;
+  height: 1.8px !important;
+  bottom: -51%;
+}
+/* when we hover over the card */
+.custom-card-size-blog:hover .custom-width-15 {
+  background-color: #0c65ed;
+}
+.custom-card-size-blog:hover img {
+  transform: rotate(-5deg) scale(1.15, 1.15);
+  transition-duration: 0.35s;
+}
+.custom-card-size-blog:hover .expanding-hr {
+  width: 100%;
+}
+.div-with-arrow:hover .little-arrow {
+  right: 26%;
+}
+.custom-width-15 a:hover {
+  opacity: 0.5;
+}
+.custom-small-font div:hover {
+  color: #0c65ed;
+  cursor: pointer;
+}
+
+/* end of latest blog section */
+
+/* start of Meet Our Clients section */
+.img-shadow {
+  transform: scale(1.2, 1.2) translate(25px, -30.3px);
+  filter: drop-shadow(-7px 1px 10px rgba(128, 128, 128, 0.568));
+}
+.ml-30 {
+  margin-left: 30%;
+}
+.img-size img {
+  width: 11rem;
+  height: 5rem;
+}
+@media screen and (max-width: 1000px){
+  .img-shadow{
+    visibility: hidden;
+    width:0;
+  }
+}
+/* because a weird horizontal scroll showed */
+.stop-hv-overflow{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+/* end of Meet Our Clients section */
+
+/* start of If You Like This Grate Work ?? For You Site... section */
+.telephone-icon {
+  opacity: 0.5;
+  font-size: 6rem;
+  bottom: -9%;
+  left: 0;
+}
+
+/*  */
+/*  */
+/* the arrow up style */
+.arrow-up {
+  bottom: 6%;
+  right: 6%;
+  height: 3rem;
+  width: 3rem;
+  z-index: 1678455232;
+}
+
+/* footer */
+.custom-box-shadow1 {
+  box-shadow: 0 0 20px rgb(9 1 1 / 57%);
+}
+footer img:hover {
+  opacity: 0.5;
+}
+footer .btn:hover {
+  background-color: #0c65ed !important;
+  color: white !important;
+}
+footer p a:hover {
+  color: gray !important;
+}
+.custom-box-shadow1 p:hover {
+  cursor: pointer;
+}
+
+/*  */
+/* contact page style */
+/*  */
+.bg-img-contact {
+  background-image: url("../images/abt-ban.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+}
+.bg-img-contact h1 {
+  padding-top: 10%;
+}
+.custom-contact-overlay {
+  background-color: rgba(22, 21, 21, 0.568);
+  padding: 1.5% 0;
+  bottom: 0;
+}
+.custom-contact-overlay span:hover {
+  cursor: pointer;
+}
+
+/* get in touch section */
+.content-box {
+  box-sizing: content-box !important;
+}
+
+.contact-form-icon {
+  top: 3%;
+  left: 2%;
+}
+.icon-textarea {
+  top: 1%;
+  left: 0.5%;
+}
+.contact-form-div input:focus,
+.contact-form-div textarea:focus {
+  outline: 0;
+}
+.contact-form-div:hover,
+.contact-form-div:focus,
+.contact-form-div:active {
+  border-bottom: 1px solid #0c65ed !important;
+}
+
+/* giving transition duration 0.25s to multiple classes */
+.custom-card-size2:hover .custom-div,
+.custom-card-size3:hover .custom-appearing-card2,
+.custom-black-bg,
+.card-img-top img,
+.little-arrow,
+.custom-small-font,
+.expanding-hr,
+.custom-card-size-blog:hover .custom-width-15,
+.custom-card-size-blog:hover .expanding-hr,
+.div-with-arrow:hover .little-arrow,
+.custom-width-15 a:hover,
+.custom-small-font div:hover,
+footer p a:hover{
+    transition-duration: 0.25s;
+}

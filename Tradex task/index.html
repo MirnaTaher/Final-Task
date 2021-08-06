@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- using bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- linking owl carousel -->
+    <!---------------- first the owl.carousel.min.css ---------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---------------- and the owl.theme.default.min.css ---------------->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css style -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="d-none d-lg-block custom-blue-bg">
+        <div class="container text-white flex-wrap">
+            <div class="row justify-content-between">
+                <div class="row col-7 my-3 align-items-start">
+                    <!-- the icons div -->
+                    <div class="col-3 border-end text-end">
+                        <a href="#"><i class="fab fa-facebook-f text-white me-3"></i></a>
+                        <a href="#"><i class="fab fa-twitter text-white me-3"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white me-3"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white me-3"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g text-white"></i></a>
+                    </div>
+
+                    <!-- the location -->
+                    <div class="col-lg-8">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <p class="d-inline-block my-0"> 267 Park Avenue New York, NY 90210</p>
+
+                    </div>
+                </div>
+                <div class="row col-4 my-3 text-end justify-content-end">
+                    <div class="col-lg-5 border-end text-end pe-4">
+                        <i class="far fa-envelope me-2"></i>
+                        <p class="d-inline-block my-0">Quick Email</p>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <i class="fas fa-phone-volume me-2"></i>
+                        <p class="d-inline-block my-0"> +1 (409) 987–5874</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- sticky navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light text-uppercase shadow sticky-top bg-white">
+        <div class="container justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="images/Trade-X-Logo.png" alt="Trade-X-Logo">
+            </a>
+            <!-- this is for when the screen is small it collapses the nav bar into a button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-end pb-4" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <!-- home with a dropdown -->
+                    <li class="nav-item me-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Home01</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Home02</a></li>
+                        </ul>
+                    </li>
+                    <!-- about -->
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">about</a>
+                    </li>
+                    <!-- headers with a dropdown -->
+                    <li class="nav-item me-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            headers
+                        </a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Header style 1</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Header style 2</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Header style 3</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Header style 4</a></li>
+
+                        </ul>
+                    </li>
+                    <!-- blog posts -->
+                    <li class="nav-item me-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            blog posts
+                        </a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">blog grid</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">blog mansonary</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">classic</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">blog detail</a></li>
+
+                        </ul>
+                    </li>
+                    <!-- services -->
+                    <li class="nav-item me-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            services
+                        </a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">full width</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">service 2 column</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">service 3 column</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">service 4 column</a></li>
+                        </ul>
+                    </li>
+                    <!-- features -->
+                    <li class="nav-item me-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            features
+                        </a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">shotcodes</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">feature 2 column</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">feature 3 column</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">feature 4 column</a></li>
+                        </ul>
+                    </li>
+                    <!-- pages -->
+                    <li class="nav-item me-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            pages
+                        </a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">shotcodes</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">feature 2 column</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">feature 3 column</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">feature 4 column</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- the carousel section -->
+    <div id="carouselExampleIndicators" class="carousel slide bg-white" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner position-relative h-100">
+            <div class="carousel-item custom-height active">
+                <div class="bg-overlay position-absolute w-100 h-100"></div>
+                <img src="images/ecommerce-cover-2.jpg" class="d-block w-100" alt="...">
+
+            </div>
+            <div class="carousel-item custom-height">
+                <div class="bg-overlay position-absolute w-100 h-100 text-center text-white">
+                    <h1>What You Do Today For Peoples3</h1>
+                    <p class="w-50 mx-auto py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                        tempora voluptatem alias
+                        sapiente obcaecati dolore ducimus et ratione? Cumque, deserunt?</p>
+                    <div class="row w-50 mx-auto justify-content-center">
+                        <button type="button" class="col-5 col-lg-3 btn btn-primary rounded-pill me-2">Get Start
+                            Now</button>
+                        <button type="button" class="col-5 col-lg-3 btn btn-outline-light rounded-pill ms-2">Contact
+                            Us</button>
+                    </div>
+                </div>
+                <img src="images/slider3.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item  custom-height">
+                <div class="bg-overlay position-absolute w-100 h-100 text-center text-white">
+                    <h1>What You Do Today For Peoples2</h1>
+                    <p class="w-50 mx-auto py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                        tempora voluptatem alias
+                        sapiente obcaecati dolore ducimus et ratione? Cumque, deserunt?</p>
+                    <div class="row w-50 mx-auto justify-content-center">
+                        <button type="button" class="col-5 col-lg-3 btn btn-primary rounded-pill me-2">Get Start
+                            Now</button>
+                        <button type="button" class="col-5 col-lg-3 btn btn-outline-light rounded-pill ms-2">Contact
+                            Us</button>
+                    </div>
+                </div>
+                <img src="images/slider2.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item  custom-height">
+                <div class="bg-overlay position-absolute w-100 h-100 text-center text-white">
+                    <h1>What You Do Today For Peoples1</h1>
+                    <p class="w-50 mx-auto py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                        tempora voluptatem alias
+                        sapiente obcaecati dolore ducimus et ratione? Cumque, deserunt?</p>
+                    <div class="row w-50 mx-auto justify-content-center">
+                        <button type="button" class="col-5 col-lg-3 btn btn-primary rounded-pill me-2">Get Start
+                            Now</button>
+                        <button type="button" class="col-5 col-lg-3 btn btn-outline-light rounded-pill ms-2">Contact
+                            Us</button>
+                    </div>
+                </div>
+                <img src="images/slider1.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+    </div>
+
+    <!-- About us section -->
+    <section class="bg-white py-5">
+        <div class="container position-relative">
+            <!-- the header -->
+            <div class="row my-5 text-center mx-auto justify-content-center">
+                <div class="col-1 custom-blue-text text-end pe-0">
+                    <hr class="ms-auto w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+                <div class="col-2">
+                    <h2 class="text-capitalize text-center">about us</h2>
+                    <p class="card-subtitle text-secondary">About Us</p>
+                </div>
+                <div class="col-1 custom-blue-text ps-0">
+                    <hr class="w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+
+            </div>
+            <!-- the image and the text -->
+            <!-- the floating card -->
+            <div class="position-absolute flex-wrap border shadow custom-card-position bg-white">
+                <div class="row align-items-center my-1">
+                    <div class="col-lg-3 fs-3 text-center">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="col-lg-8 border-start my-1">
+                        <h5>Markating</h5>
+                        <p>Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center my-1">
+                    <div class="col-lg-3 fs-3 text-center">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <div class="col-lg-8 border-start my-1">
+                        <h5>Great Usability</h5>
+                        <p>Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center my-1">
+                    <div class="col-lg-3 fs-3 text-center">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <div class="col-lg-8 border-start my-1">
+                        <h5>Unique Design</h5>
+                        <p>Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center my-1">
+                    <div class="col-lg-3 fs-3 text-center">
+                        <i class="far fa-thumbs-up"></i>
+                    </div>
+                    <div class="col-lg-8 border-start my-1">
+                        <h5>Quick & Powerful</h5>
+                        <p>Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-75 flex-wrap ms-auto about-us-div">
+                <div class="col-12 col-xl-6 me-2">
+                    <img src="images/abt-3.jpg" alt="some people standing">
+                </div>
+                <div class="col-12 col-xl-5 ms-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita a minima, esse consectetur
+                        aspernatur deleniti voluptatibus fugit sapiente. Error, quod deserunt. Veritatis corrupti eius
+                        dolor
+                        delectus recusandae odit inventore, ad impedit, modi illo, ullam ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita a minima, esse consectetur
+                        aspernatur deleniti voluptatibus fugit sapiente. Error, quod deserunt. Veritatis corrupti eius
+                        dolor
+                        delectus recusandae odit inventore, ad impedit, modi illo, ullam ipsum.</p>
+
+                    <button type="button" class="btn btn-primary custom-blue-bg px-4 py-1 custom-btn">Learn
+                        More</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- the counting number section -->
+    <section class="custom-gray-bg py-5">
+        <div class="container">
+            <div class="row my-5 justify-content-between">
+                <div class="row col-3 align-items-center justify-content-center">
+                    <div class="col-3 fs-1 bg-white shadow text-center rounded custom-blue-text">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <div class="col-7 pt-3">
+                        <h4>8000</h4>
+                        <p>Total Projects</p>
+                    </div>
+                </div>
+                <div class="row col-3 align-items-center justify-content-center">
+                    <div class="col-3 fs-1 bg-white shadow text-center rounded custom-blue-text">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="col-7 pt-3">
+                        <h4>810</h4>
+                        <p>Won Awards</p>
+                    </div>
+                </div>
+
+                <div class="row col-3 align-items-center justify-content-center">
+                    <div class="col-3 fs-1 bg-white shadow text-center rounded custom-blue-text">
+                        <i class="far fa-grin"></i>
+                    </div>
+                    <div class="col-7 pt-3">
+                        <h4>2000</h4>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+
+                <div class="row col-3 align-items-center justify-content-center">
+                    <div class="col-3 fs-1 bg-white shadow text-center rounded custom-blue-text">
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <div class="col-7 pt-3">
+                        <h4>20</h4>
+                        <p>Years Experience</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- the background for the our services section -->
+    <div class="custom-bg-img position-fixed w-100 h-100">
+        <div class="bg-overlay">
+
+        </div>
+    </div>
+
+    <!-- Our services -->
+    <section class="bg-transparent text-white">
+        <div>
+            <div>
+                <div class="container">
+                    <div class="row pt-5 mb-3 text-center mx-auto justify-content-center">
+                        <div class="col-1 custom-blue-text text-end pe-0">
+                            <hr class="ms-auto w-50 custom-hr-top mb-0">
+                            <hr class="custom-hr-bottom mt-1">
+                        </div>
+                        <div class="col-xl-2 col-4">
+                            <h2 class="text-capitalize text-center">Our Services</h2>
+
+                        </div>
+
+                        <div class="col-1 custom-blue-text ps-0">
+                            <hr class="w-50 custom-hr-top mb-0">
+                            <hr class="custom-hr-bottom mt-1">
+                        </div>
+
+                    </div>
+                    <p class="card-subtitle w-75 text-center mx-auto">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing
+                        elit, sed do eiusmod
+                        tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusm dipisicing elit, sed do eiusmod tempor.</p>
+                    <div class="row text-center fs-3 justify-content-between align-content-center my-5">
+                        <div class="custom-card-size border rounded position-relative mb-3">
+                            <i class="fas fa-cloud-upload-alt fs-1"></i>
+                            <p>Online Marketting</p>
+                            <div class="position-absolute w-100 h-100 custom-appearing-card text-dark p-4 rounded">
+                                <h4 class="fs-3 pb-1">Online Marketting</h4>
+                                <p class="fs-6 text-secondary py-1">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor.
+                                    incididunt ut labore et dolore. Lorem ipsum dolor sit amet.
+                                </p>
+                                <button type="button" class="btn btn-primary custom-blue-bg px-4 py-1 custom-btn">Learn
+                                    More</button>
+                            </div>
+
+                        </div>
+                        <div class="custom-card-size border rounded position-relative mb-3">
+                            <i class="fas fa-tv fs-1"></i>
+                            <p>Web Design</p>
+                            <div class="position-absolute w-100 h-100 custom-appearing-card text-dark p-4 rounded">
+                                <h4 class="fs-3 pb-1">Web Design</h4>
+                                <p class="fs-6 text-secondary py-1">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor.
+                                    incididunt ut labore et dolore. Lorem ipsum dolor sit amet.
+                                </p>
+                                <button type="button" class="btn btn-primary custom-blue-bg px-4 py-1 custom-btn">Learn
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class="custom-card-size border rounded position-relative mb-3">
+                            <i class="fas fa-pencil-alt fs-1"></i>
+                            <p>Graphic Design</p>
+                            <div class="position-absolute w-100 h-100 custom-appearing-card text-dark p-4 rounded">
+                                <h4 class="fs-3 pb-1">Graphic Design</h4>
+                                <p class="fs-6 text-secondary py-1">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor.
+                                    incididunt ut labore et dolore. Lorem ipsum dolor sit amet.
+                                </p>
+                                <button type="button" class="btn btn-primary custom-blue-bg px-4 py-1 custom-btn">Learn
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class="custom-card-size border rounded position-relative mb-3">
+                            <i class="fas fa-tv fs-1"></i>
+                            <p>Web Development</p>
+                            <div class="position-absolute w-100 h-100 custom-appearing-card text-dark p-4 rounded">
+                                <h4 class="fs-3 pb-1">Web Development</h4>
+                                <p class="fs-6 text-secondary py-1">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor.
+                                    incididunt ut labore et dolore. Lorem ipsum dolor sit amet.
+                                </p>
+                                <button type="button" class="btn btn-primary custom-blue-bg px-4 py-1 custom-btn">Learn
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class="custom-card-size border rounded position-relative mb-3">
+                            <i class="fas fa-network-wired fs-1"></i>
+                            <p>Networking</p>
+                            <div class="position-absolute w-100 h-100 custom-appearing-card text-dark p-4 rounded">
+                                <h4 class="fs-3 pb-1">Networking</h4>
+                                <p class="fs-6 text-secondary py-1">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor.
+                                    incididunt ut labore et dolore. Lorem ipsum dolor sit amet.
+                                </p>
+                                <button type="button" class="btn btn-primary custom-blue-bg px-4 py-1 custom-btn">Learn
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class="custom-card-size border rounded position-relative mb-3">
+                            <i class="fab fa-wordpress-simple fs-1"></i>
+                            <p>Wordpress Theme</p>
+                            <div class="position-absolute w-100 h-100 custom-appearing-card text-dark p-4 rounded">
+                                <h4 class="fs-3 pb-1">Wordpress Theme</h4>
+                                <p class="fs-6 text-secondary py-1">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor.
+                                    incididunt ut labore et dolore. Lorem ipsum dolor sit amet.
+                                </p>
+                                <button type="button" class="btn btn-primary custom-blue-bg px-4 py-1 custom-btn">Learn
+                                    More</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our work section -->
+    <section class="bg-white py-5">
+        <div class="container">
+            <div class="row pt-5 mb-3 text-center mx-auto justify-content-center">
+                <div class="col-1 custom-blue-text text-end pe-0">
+                    <hr class="ms-auto w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+                <div class="col-xl-2 col-3">
+                    <h2 class="text-capitalize text-center">Our Work</h2>
+
+                </div>
+
+                <div class="col-1 custom-blue-text ps-0">
+                    <hr class="w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+
+            </div>
+            <p class="card-subtitle w-75 text-center mx-auto mb-5 text-secondary">Lorem ipsum dolor sit amet,
+                consectetur
+                adipisicing
+                elit, sed do eiusmod
+                tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusm dipisicing elit, sed do eiusmod tempor.</p>
+            <!-- the tab sub-section -->
+            <div class="col-lg-7 col-10 mx-auto">
+                <ul class="list-group list-group-horizontal justify-content-between text-dark">
+                    <li class="list-group-item" id="allLi"><a href="#" class="text-decoration-none">All /</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Creative Design /</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Developement /</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Graphic Design /</a></li>
+                </ul>
+            </div>
+            <!-- the cards with text over them (when you hover) -->
+            <div class="flex-wrap row justify-content-between my-3 text-white fw-bold lh-sm">
+                <div class="custom-card-size2 mb-4 position-relative px-0">
+                    <img class="h-100 w-100 rounded" src="images/port2-370x390.jpg">
+                    <div class="position-absolute rounded custom-div px-2 py-2 row">
+                        <div class="col-lg-10">
+                            <p>Developement, Graphic Design</p>
+                            <h5><a href="#" class="text-decoration-none text-white">Project Title01</a></h5>
+                        </div>
+                        <a href="#" class="col-lg-2 ps-4 pt-3 text-decoration-none text-white"><i
+                                class="fas fa-plus fs-3"></i></a>
+                    </div>
+                </div>
+                <div class="custom-card-size2 mb-4 position-relative px-0">
+                    <img class="h-100 w-100 rounded" src="images/computer-472016_1920-360x380.jpg" alt="">
+                    <div class="position-absolute rounded custom-div px-2 py-2 row">
+                        <div class="col-lg-10">
+                            <p>Developement, Graphic Design</p>
+                            <h5><a href="#" class="text-decoration-none text-white">Project Title02</a></h5>
+                        </div>
+                        <a href="#" class="col-lg-2 ps-4 pt-3 text-decoration-none text-white"><i
+                                class="fas fa-plus fs-3"></i></a>
+                    </div>
+                </div>
+                <div class="custom-card-size2 mb-4 position-relative px-0">
+                    <img class="h-100 w-100 rounded" src="images/office-1209640_1920-1-360x380.jpg" alt="">
+                    <div class="position-absolute rounded custom-div px-2 py-2 row">
+                        <div class="col-lg-10">
+                            <p>Creative Design, Developement, Graphic Design, Networking</p>
+                            <h5 class="pb-4"><a href="#" class="text-decoration-none text-white">Project Title03</a>
+                            </h5>
+                        </div>
+                        <a href="#" class="col-lg-2 ps-4 align-self-end pb-4 text-decoration-none text-white"><i
+                                class="fas fa-plus fs-3"></i></a>
+                    </div>
+                </div>
+                <div class="custom-card-size2 position-relative px-0">
+                    <img class="h-100 w-100 rounded" src="images/port7-370x390.jpg" alt="">
+                    <div class="position-absolute rounded custom-div px-2 py-2 row">
+                        <div class="col-lg-10">
+                            <p>Creative Design, Networking</p>
+                            <h5><a href="#" class="text-decoration-none text-white">Project Title04</a></h5>
+                        </div>
+                        <a href="#" class="col-lg-2 ps-4 pt-3 text-decoration-none text-white"><i
+                                class="fas fa-plus fs-3"></i></a>
+                    </div>
+                </div>
+                <div class="custom-card-size2 position-relative px-0">
+                    <img class="h-100 w-100 rounded" src="images/suit-869380_1920-360x380.jpg" alt="">
+                    <div class="position-absolute rounded custom-div px-2 py-2 row">
+                        <div class="col-lg-10">
+                            <p>Creative Design, Networking</p>
+                            <h5><a href="#" class="text-decoration-none text-white">Project Title05</a></h5>
+                        </div>
+                        <a href="#" class="col-lg-2 ps-4 pt-3 text-decoration-none text-white"><i
+                                class="fas fa-plus fs-3"></i></a>
+                    </div>
+                </div>
+                <div class="custom-card-size2 position-relative px-0">
+                    <img class="h-100 w-100 rounded" src="images/port2-5-360x380.jpg" alt="">
+                    <div class="position-absolute rounded custom-div px-2 py-2 row">
+                        <div class="col-lg-10">
+                            <p>Creative Design, Networking</p>
+                            <h5><a href="#" class="text-decoration-none text-white">Project Title06</a></h5>
+                        </div>
+                        <a href="#" class="col-lg-2 ps-4 pt-3 text-decoration-none text-white"><i
+                                class="fas fa-plus fs-3"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- the image alone section -->
+    <section class="bg-white pt-5">
+        <img class="w-100" src="images/ecommerce-cover-2.jpg" alt="">
+    </section>
+
+    <!-- Our Creative Team section -->
+    <section class="custom-gray-bg pb-5">
+        <div class="container py-5">
+            <div class="row pt-5 mb-3 text-center mx-auto justify-content-center">
+                <div class="col-1 custom-blue-text text-end pe-0">
+                    <hr class="ms-auto w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+                <div class="col-xl-3 col-5">
+                    <h2 class="text-capitalize text-center">Our Creative Team</h2>
+
+                </div>
+
+                <div class="col-1 custom-blue-text ps-0">
+                    <hr class="w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+
+            </div>
+            <p class="card-subtitle w-75 text-center mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit, sed do eiusmod
+                tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusm dipisicing elit, sed do eiusmod tempor.</p>
+            <div class="row justify-content-between mx-auto text-center align-items-start">
+                <div class="px-0 mt-3 custom-card-size3 position-relative">
+                    <img src="images/team1.png">
+                    <div class="position-absolute position-relative bg-white w-100 custom-appearing-card2 pt-3">
+                        <h5><a href="#" class="text-decoration-none text-dark fs-5 custom-h5">Jen Whyan</a></h5>
+                        <h6 class="custom-blue-text fs-6 mb-3"> Founder</h6>
+                        <hr class="w-75 text-dark mx-auto my-0 custom-hr">
+                        <p class="text-secondary mx-4">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget,
+                            imperdiet nec, imperdiet
+                            iaculis, ipsum. Sed aliquam ultrices mauris....</p>
+                        <div
+                            class="custom-card-small-div position-absolute custom-blue-bg w-75 row justify-content-around mx-auto flex-nowrap py-2 px-5 rounded-top text-center fs-6">
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i
+                                    class="fab fa-linkedin-in"></i></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i
+                                    class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-tumblr"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="px-0 mt-3 custom-card-size3 position-relative">
+                    <img src="images/team2.png">
+                    <div class="position-absolute position-relative bg-white w-100 custom-appearing-card2 pt-3">
+                        <h5><a href="#" class="text-decoration-none text-dark fs-5 custom-h5">Mical Peterson</a></h5>
+                        <h6 class="custom-blue-text fs-6 mb-3">Founder</h6>
+                        <hr class="w-75 text-dark mx-auto my-0 custom-hr">
+                        <p class="text-secondary mx-4">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget,
+                            imperdiet nec, imperdiet
+                            iaculis, ipsum. Sed aliquam ultrices mauris....</p>
+                        <div
+                            class="custom-card-small-div position-absolute custom-blue-bg w-75 row justify-content-around mx-auto flex-nowrap py-2 px-5 rounded-top text-center fs-6">
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i
+                                    class="fab fa-linkedin-in"></i></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i
+                                    class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-tumblr"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="px-0 mt-3 custom-card-size3 position-relative">
+                    <img src="images/team3.png">
+                    <div class="position-absolute position-relative bg-white w-100 custom-appearing-card2 pt-3">
+                        <h5><a href="#" class="text-decoration-none text-dark fs-5 custom-h5">Sara Corner</a></h5>
+                        <h6 class="custom-blue-text fs-6 mb-3">Founder</h6>
+                        <hr class="w-75 text-dark mx-auto my-0 custom-hr">
+                        <p class="text-secondary mx-4">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget,
+                            imperdiet nec, imperdiet
+                            iaculis, ipsum. Sed aliquam ultrices mauris....</p>
+                        <div
+                            class="custom-card-small-div position-absolute custom-blue-bg w-75 row justify-content-around mx-auto flex-nowrap py-2 px-5 rounded-top text-center fs-6">
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i
+                                    class="fab fa-linkedin-in"></i></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i
+                                    class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-tumblr"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="px-0 mt-3 custom-card-size3 position-relative">
+                    <img src="images/team4.png">
+                    <div class="position-absolute position-relative bg-white w-100 custom-appearing-card2 pt-3">
+                        <h5><a href="#" class="text-decoration-none text-dark fs-5 custom-h5">Milly Jackson</a></h5>
+                        <h6 class="custom-blue-text fs-6 mb-3">Founder</h6>
+                        <hr class="w-75 text-dark mx-auto my-0 custom-hr">
+                        <p class="text-secondary mx-4">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget,
+                            imperdiet nec, imperdiet
+                            iaculis, ipsum. Sed aliquam ultrices mauris....</p>
+                        <div
+                            class="custom-card-small-div position-absolute custom-blue-bg w-75 row justify-content-around mx-auto flex-nowrap py-2 px-5 rounded-top text-center fs-6">
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i
+                                    class="fab fa-linkedin-in"></i></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i
+                                    class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-tumblr"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="px-0 mt-3 custom-card-size3 position-relative">
+                    <img src="images/team5.png">
+                    <div class="position-absolute position-relative bg-white w-100 custom-appearing-card2 pt-3">
+                        <h5><a href="#" class="text-decoration-none text-dark fs-5 custom-h5">Clark Jackson</a></h5>
+                        <h6 class="custom-blue-text fs-6 mb-3">Founder</h6>
+                        <hr class="w-75 text-dark mx-auto my-0 custom-hr">
+                        <p class="text-secondary mx-4">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget,
+                            imperdiet nec, imperdiet
+                            iaculis, ipsum. Sed aliquam ultrices mauris....</p>
+                        <div
+                            class="custom-card-small-div position-absolute custom-blue-bg w-75 row justify-content-around mx-auto flex-nowrap py-2 px-5 rounded-top text-center fs-6">
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i
+                                    class="fab fa-linkedin-in"></i></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i
+                                    class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-tumblr"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="px-0 mt-3 custom-card-size3 position-relative">
+                    <img src="images/team6.png">
+                    <div class="position-absolute position-relative bg-white w-100 custom-appearing-card2 pt-3">
+                        <h5><a href="#" class="text-decoration-none text-dark fs-5 custom-h5">John Jojo</a></h5>
+                        <h6 class="custom-blue-text fs-6 mb-3">Founder</h6>
+                        <hr class="w-75 text-dark mx-auto my-0 custom-hr">
+                        <p class="text-secondary mx-4">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget,
+                            imperdiet nec, imperdiet
+                            iaculis, ipsum. Sed aliquam ultrices mauris....</p>
+                        <div
+                            class="custom-card-small-div position-absolute custom-blue-bg w-75 row justify-content-around mx-auto flex-nowrap py-2 px-5 rounded-top text-center fs-6">
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i
+                                    class="fab fa-linkedin-in"></i></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i
+                                    class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="text-white col-1 custom-card-link"><i class="fab fa-tumblr"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <!-- our pricing section -->
+    <section class="bg-white py-5">
+        <div class="container py-5">
+            <div class="row pt-5 mb-3 text-center mx-auto justify-content-center">
+                <div class="col-1 custom-blue-text text-end pe-0">
+                    <hr class="ms-auto w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+                <div class="col-xl-2 col-4">
+                    <h2 class="text-capitalize text-center">Our Pricing</h2>
+
+                </div>
+
+                <div class="col-1 custom-blue-text ps-0">
+                    <hr class="w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+
+            </div>
+            <p class="card-subtitle w-75 text-center mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit, sed do eiusmod
+                tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusm dipisicing elit, sed do eiusmod tempor.</p>
+            <nav class="py-5">
+                <div class="nav nav-pills mx-auto custom-width-40 border border-primary rounded-pill overflow-hidden"
+                    id="nav-tab" role="tablist">
+                    <button class="nav-link active w-50 not-rounded" id="nav-permonth-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-permonth" type="button" role="tab" aria-controls="nav-permonth"
+                        aria-selected="true">
+                        <h4>Per / Month</h4>
+                    </button>
+                    <button class="nav-link w-50 not-rounded" id="nav-peryear-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-peryear" type="button" role="tab" aria-controls="nav-peryear"
+                        aria-selected="false">
+                        <h4>Per / Year</h4>
+                    </button>
+                    <!-- <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button> -->
+                </div>
+            </nav>
+            <!-- the content of each tab -->
+            <div class="tab-content pb-5" id="nav-tabContent">
+                <!-- for the per month tab -->
+                <div class="tab-pane fade show active" id="nav-permonth" role="tabpanel"
+                    aria-labelledby="nav-permonth-tab">
+                    <div class="row">
+                        <!-- for personal -->
+                        <div class="col-xl-4 col-6 border rounded p-4 text-center">
+                            <h1>Personal</h1>
+                            <hr class="w-25 custom-hr-bottom custom-blue-text mx-auto">
+                            <h5 class="py-3">From <span class="custom-blue-text">$399</span></h5>
+                            <div class="border-top border-bottom py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    03 PSD Pack
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <div class="py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    03 Wordpress Pack
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <div class="border-top border-bottom py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    120 Support Tiket
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <a class="btn text-white custom-blue-bg rounded-pill mt-4 px-3" href="#" role="button">GET
+                                STARTED
+                                NOW</a>
+
+
+
+                        </div>
+                        <!-- for business -->
+                        <div class="col-xl-4 col-6 border rounded p-4 text-center custom-box-shadow">
+                            <h1>Business</h1>
+                            <hr class="w-25 custom-hr-bottom custom-blue-text mx-auto">
+                            <h5 class="py-3">From <span class="custom-blue-text">$899</span></h5>
+                            <div class="border-top border-bottom py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    05 PSD Pack
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <div class="py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    05 Wordpress Pack
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <div class="border-top border-bottom py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    1000 Support Tiket
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <a class="btn bg-white btn btn-outline-primary custom-blue-text rounded-pill mt-4 px-3"
+                                href="#" role="button">GET STARTED NOW</a>
+
+
+
+                        </div>
+                        <!-- for Ultimate -->
+                        <div class="col-xl-4 col-6 border rounded p-4 text-center">
+                            <h1>Ultimate</h1>
+                            <hr class="w-25 custom-hr-bottom custom-blue-text mx-auto">
+                            <h5 class="py-3">From <span class="custom-blue-text">$499</span></h5>
+                            <div class="border-top border-bottom py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    20 PSD Pack
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <div class="py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    20 Wordpress Pack
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <div class="border-top border-bottom py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    1500 Support Tiket
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <a class="btn text-white custom-blue-bg rounded-pill mt-4 px-3" href="#" role="button">GET
+                                STARTED NOW</a>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- for the per year tab -->
+                <div class="tab-pane fade" id="nav-peryear" role="tabpanel" aria-labelledby="nav-peryear-tab">
+                    <div class="row">
+                        <!-- for business -->
+                        <div class="col-xl-4 col-6 border rounded p-4 text-center">
+                            <h1>Business</h1>
+                            <hr class="w-25 custom-hr-bottom custom-blue-text mx-auto">
+                            <h5 class="py-3">From <span class="custom-blue-text">$499</span></h5>
+                            <div class="border-top border-bottom py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    03 PSD Pack
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <div class="py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    03 Wordpress Pack
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <div class="border-top border-bottom py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    120 Support Tiket
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <a class="btn text-white custom-blue-bg rounded-pill mt-4 px-3" href="#" role="button">GET
+                                STARTED NOW</a>
+                        </div>
+                        <!-- for Ultimate -->
+                        <div class="col-xl-4 col-6 border rounded p-4 text-center">
+                            <h1>Ultimate</h1>
+                            <hr class="w-25 custom-hr-bottom custom-blue-text mx-auto">
+                            <h5 class="py-3">From <span class="custom-blue-text">$799</span></h5>
+                            <div class="border-top border-bottom py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    05 PSD Pack
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <div class="py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    05 Wordpress Pack
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <div class="border-top border-bottom py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    1000 Support Tiket
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <a class="btn text-white custom-blue-bg rounded-pill mt-4 px-3" href="#" role="button">GET
+                                STARTED NOW</a>
+
+
+
+                        </div>
+                        <!-- for Personal -->
+                        <div class="col-xl-4 col-6 border rounded p-4 text-center custom-box-shadow">
+                            <h1>Personal</h1>
+                            <hr class="w-25 custom-hr-bottom custom-blue-text mx-auto">
+                            <h5 class="py-3">From <span class="custom-blue-text">$1499</span></h5>
+                            <div class="border-top border-bottom py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    20 PSD Pack
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <div class="py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    30 Wordpress Pack
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <div class="border-top border-bottom py-3">
+                                <h5>
+                                    <i class="fas fa-check custom-blue-text"></i>
+                                    1500 Support Tiket
+                                </h5>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer Aenean commodo ligula
+                                </p>
+                            </div>
+                            <a class="btn bg-white btn btn-outline-primary custom-blue-text rounded-pill mt-4 px-3"
+                                href="#" role="button">GET STARTED NOW</a>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div> -->
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--  Subscribe now for news -->
+    <section class="custom-black-bg py-5">
+        <div class="container">
+            <div class="row row-cols-2 justify-content-center align-items-center py-5">
+                <div class="col fs-1 fw-bold text-white">
+                    <p class="m-0"><i class="far fa-envelope"></i> Subscribe now for news</p>
+                </div>
+                <div class="row pt-3">
+                    <form class="row">
+
+                        <div class="col-xl-9">
+                            <label for="inputEmail2" class="visually-hidden">Email</label>
+                            <input type="email" class="form-control" id="inputEmail2" placeholder="Input your mail">
+                        </div>
+                        <div class="col-xl-3">
+                            <button type="submit" class="btn btn-primary rounded-pill fs-5 px-5">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonial section -->
+    <!-- we use owl carousel for this section -->
+    <section class="bg-white py-5">
+        <div class="container py-5">
+            <!-- the heading -->
+            <div class="row pt-5 mb-3 text-center mx-auto justify-content-center">
+                <div class="col-1 custom-blue-text text-end pe-0">
+                    <hr class="ms-auto w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+                <div class="col-xl-2 col-lg-3">
+                    <h2 class="text-capitalize text-center">Testimonial</h2>
+
+                </div>
+
+                <div class="col-1 custom-blue-text ps-0">
+                    <hr class="w-50 custom-hr-top mb-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+
+            </div>
+            <!-- the carousel -->
+            <div class="owl-carousel owl-theme mt-5">
+                <div class="item">
+                    <div class="rounded border row p-2 justify-content-center box-sizing w-100 m-0 align-items-center">
+                        <div class="col-4 text-center">
+                            <img src="images/testi-avtar-4.jpg" class="rounded w-75 h-75 mx-auto">
+                        </div>
+                        <div class="col-8">
+                            <h5 class="text-dark">Salena Jovell</h5>
+                            <h6 class="custom-blue-text">Depeloper</h6>
+                            <p class="text-secondary mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                                arcu. In enim justo,ligula. Cum
+                                eget dolor Aenean rhoncus ut, fringilla vel, aliquet nec, imperdiet a, venenatis vitae,
+                                justo.
+                                Nullam dictum felis eu pede mollis pretium.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="rounded border row p-2 justify-content-center box-sizing w-100 m-0 align-items-center">
+                        <div class="col-4 text-center">
+                            <img src="images/testi-avtar-3.jpg" class="rounded w-75 h-75 mx-auto">
+                        </div>
+                        <div class="col-8">
+                            <h5 class="text-dark">Eline Lockod</h5>
+                            <h6 class="custom-blue-text">Marketing Manager</h6>
+                            <p class="text-secondary mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                                arcu. In enim justo,ligula. Cum
+                                eget dolor Aenean rhoncus ut, fringilla vel, aliquet nec, imperdiet a, venenatis vitae,
+                                justo.
+                                Nullam dictum felis eu pede mollis pretium.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="rounded border row p-2 justify-content-center box-sizing w-100 m-0 align-items-center">
+                        <div class="col-4 text-center">
+                            <img src="images/testi-avtar-2.jpg" class="rounded w-75 h-75 mx-auto">
+                        </div>
+                        <div class="col-8">
+                            <h5 class="text-dark">Johy Michel</h5>
+                            <h6 class="custom-blue-text">Manager</h6>
+                            <p class="text-secondary mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                                arcu. In enim justo,ligula. Cum
+                                eget dolor Aenean rhoncus ut, fringilla vel, aliquet nec, imperdiet a, venenatis vitae,
+                                justo.
+                                Nullam dictum felis eu pede mollis pretium.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="rounded border row p-2 justify-content-center box-sizing w-100 m-0 align-items-center">
+                        <div class="col-4 text-center">
+                            <img src="images/testi-avtar-1.jpg" class="rounded w-75 h-75 mx-auto">
+                        </div>
+                        <div class="col-8">
+                            <h5 class="text-dark">Jon Doe</h5>
+                            <h6 class="custom-blue-text">Marketing Manager</h6>
+                            <p class="text-secondary mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                                arcu. In enim justo,ligula. Cum
+                                eget dolor Aenean rhoncus ut, fringilla vel, aliquet nec, imperdiet a, venenatis vitae,
+                                justo.
+                                Nullam dictum felis eu pede mollis pretium.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="rounded border row p-2 justify-content-center box-sizing w-100 m-0 align-items-center">
+                        <div class="col-4 text-center">
+                            <img src="images/testi-avtar-4.jpg" class="rounded w-75 h-75 mx-auto">
+                        </div>
+                        <div class="col-8">
+                            <h5 class="text-dark">Erich Trait</h5>
+                            <h6 class="custom-blue-text">Depeloper</h6>
+                            <p class="text-secondary mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                                arcu. In enim justo,ligula. Cum
+                                eget dolor Aenean rhoncus ut, fringilla vel, aliquet nec, imperdiet a, venenatis vitae,
+                                justo.
+                                Nullam dictum felis eu pede mollis pretium.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="rounded border row p-2 justify-content-center box-sizing w-100 m-0 align-items-center">
+                        <div class="col-4 text-center">
+                            <img src="images/testi-avtar-5.jpg" class="rounded w-75 h-75 mx-auto">
+                        </div>
+                        <div class="col-8">
+                            <h5 class="text-dark">Gargi Jane</h5>
+                            <h6 class="custom-blue-text">Depeloper</h6>
+                            <p class="text-secondary mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                                arcu. In enim justo,ligula. Cum
+                                eget dolor Aenean rhoncus ut, fringilla vel, aliquet nec, imperdiet a, venenatis vitae,
+                                justo.
+                                Nullam dictum felis eu pede mollis pretium.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- latest blog section -->
+    <section class="custom-gray-bg py-5">
+        <div class="container py-5">
+            <!-- the heading -->
+            <div class="row pt-5 mb-3 text-center mx-auto justify-content-center align-items-center">
+                <div class="col-1 custom-blue-text text-end pe-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+                <div class="col-2">
+                    <h2 class="text-capitalize text-center">Latest Blog</h2>
+
+                </div>
+
+                <div class="col-1 custom-blue-text ps-0">
+                    <hr class="custom-hr-bottom mt-1">
+                </div>
+                <p class="card-subtitle w-75 text-center mx-auto mb-5 mt-3 text-secondary">Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipisicing
+                    elit, sed do eiusmod
+                    tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit, sed do eiusm dipisicing elit, sed do eiusmod tempor.</p>
+                <!-- the  -->
+            </div>
+            <!-- the card part -->
+            <div class="row w-100 mx-auto justify-content-between">
+                <!-- first card -->
+
+                <div class="custom-card-size-blog custom-box-shadow rounded px-0 bg-white mt-3">
+                    <div class="card border-0">
+                        <div class="card-img-top">
+                            <img src="images/gallery2-1-360x260.png">
+                        </div>
+
+                        <div class="card-body row w-100 mx-auto p-0 h-100">
+                            <div class="custom-width-15 custom-black-bg h-100 m-0 px-3 py-4 text-center">
+                                <a href="#"><i class="fab fa-facebook-f text-white pb-3"></i></a>
+                                <a href="#"><i class="fab fa-twitter text-white pb-3"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white pb-3"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g text-white pb-3"></i></a>
+                                <a href="#"><i class="fab fa-tumblr text-white"></i></a>
+                            </div>
+                            <div class="col-10 m-2 h-100">
+                                <a href="#" class="text-decoration-none">
+                                    <h5 class="text-dark">Four Ways To Cheer And Plan Your Self Up On Blue</h5>
+                                </a>
+                                <div class="">
+                                    <div
+                                        class="row text-secondary border-bottom custom-small-font py-2 mb-2 position-relative">
+                                        <div class="col-5 border-end">
+                                            <p class="m-0"><i class="far fa-user"> </i> By Dtm1_demo</p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p class="m-0"><i class="far fa-calendar-alt"></i>
+                                                19 Dec 2018</p>
+                                        </div>
+                                        <hr class="position-absolute custom-blue-text expanding-hr">
+                                    </div>
+                                    <div class="text-secondary">
+                                        <p>Lorem ipsum dolor sit amet, rcquisc adipiscing elit. Aenean socada commodo
+                                            ligauala egets dssdolor....</p>
+                                    </div>
+                                    <div class="position-relative text-secondary w-50 fw-bold div-with-arrow">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Read More
+                                            <i class="fas fa-long-arrow-alt-right position-absolute little-arrow"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="custom-card-size-blog custom-box-shadow rounded px-0 bg-white mt-3">
+                    <div class="card border-0">
+                        <div class="card-img-top">
+                            <img src="images/bg3-360x260.jpg">
+                        </div>
+
+                        <div class="card-body row w-100 mx-auto p-0 h-100">
+                            <div class="custom-width-15 custom-black-bg h-100 m-0 px-3 py-4 text-center">
+                                <a href="#"><i class="fab fa-facebook-f text-white pb-3"></i></a>
+                                <a href="#"><i class="fab fa-twitter text-white pb-3"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white pb-3"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g text-white pb-3"></i></a>
+                                <a href="#"><i class="fab fa-tumblr text-white"></i></a>
+                            </div>
+                            <div class="col-10 m-2 h-100">
+                                <a href="#" class="text-decoration-none">
+                                    <h5 class="text-dark">Four Ways To Cheer And Plan Your Self Up On Blue</h5>
+                                </a>
+                                <div class="">
+                                    <div
+                                        class="row text-secondary border-bottom custom-small-font py-2 mb-2 position-relative">
+                                        <div class="col-5 border-end">
+                                            <p class="m-0"><i class="far fa-user"> </i> By Dtm1_demo</p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p class="m-0"><i class="far fa-calendar-alt"></i>
+                                                19 Dec 2018</p>
+                                        </div>
+                                        <hr class="position-absolute custom-blue-text expanding-hr">
+                                    </div>
+                                    <div class="text-secondary">
+                                        <p>Lorem ipsum dolor sit amet, rcquisc adipiscing elit. Aenean socada commodo
+                                            ligauala egets dssdolor....</p>
+                                    </div>
+                                    <div class="position-relative text-secondary w-50 fw-bold div-with-arrow">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Read More
+                                            <i class="fas fa-long-arrow-alt-right position-absolute little-arrow"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="custom-card-size-blog custom-box-shadow rounded px-0 bg-white mt-3">
+                    <div class="card border-0">
+                        <div class="card-img-top">
+                            <img src="images/bg1-360x260.jpg">
+                        </div>
+
+                        <div class="card-body row w-100 mx-auto p-0 h-100">
+                            <div class="custom-width-15 custom-black-bg h-100 m-0 px-3 py-4 text-center">
+                                <a href="#"><i class="fab fa-facebook-f text-white pb-3"></i></a>
+                                <a href="#"><i class="fab fa-twitter text-white pb-3"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in text-white pb-3"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g text-white pb-3"></i></a>
+                                <a href="#"><i class="fab fa-tumblr text-white"></i></a>
+                            </div>
+                            <div class="col-10 m-2 h-100">
+                                <a href="#" class="text-decoration-none">
+                                    <h5 class="text-dark">Four Ways To Cheer And Plan Your Self Up On Blue</h5>
+                                </a>
+                                <div class="">
+                                    <div
+                                        class="row text-secondary border-bottom custom-small-font py-2 mb-2 position-relative">
+                                        <div class="col-5 border-end">
+                                            <p class="m-0"><i class="far fa-user"> </i> By Dtm1_demo</p>
+                                        </div>
+                                        <div class="col-5">
+                                            <p class="m-0"><i class="far fa-calendar-alt"></i>
+                                                19 Dec 2018</p>
+                                        </div>
+                                        <hr class="position-absolute custom-blue-text expanding-hr">
+                                    </div>
+                                    <div class="text-secondary">
+                                        <p>Lorem ipsum dolor sit amet, rcquisc adipiscing elit. Aenean socada commodo
+                                            ligauala egets dssdolor....</p>
+                                    </div>
+                                    <div class="position-relative text-secondary w-50 fw-bold div-with-arrow">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Read More
+                                            <i class="fas fa-long-arrow-alt-right position-absolute little-arrow"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Clients section -->
+    <section class="pt-5 bg-white w-100 stop-hv-overflow">
+        <!-- heading -->
+        <div class="row pt-5 mb-3 text-center ml-30">
+            <div class="col-auto">
+                <h2 class="text-capitalize text-start ps-2">meet our clients</h2>
+
+            </div>
+
+            <div class="col-1 custom-blue-text ps-0">
+                <hr class="w-50 custom-hr-top mb-0">
+                <hr class="custom-hr-bottom mt-1">
+            </div>
+
+        </div>
+        <div class="container row mx-auto mt-5 justify-content-between">
+            <div class="col-xl-2 hidden-when-small">
+                <img src="images/team5.png" class="img-shadow">
+            </div>
+            <div class="col-12 col-xl-9 row justify-content-between flex-wrap h-75 img-size">
+
+                <div class="col-auto border border-secondary m-3 rounded text-center px-5 py-3">
+                    <img src="images/partner-g1.png">
+                </div>
+                <div class="col-auto border border-secondary m-3 rounded text-center px-5 py-3">
+                    <img src="images/partner-g2.png">
+                </div>
+                <div class="col-auto border border-secondary m-3 rounded text-center px-5 py-3">
+                    <img src="images/partner-g3.png">
+                </div>
+                <div class="col-auto border border-secondary m-3 rounded text-center px-5 py-3">
+                    <img src="images/partner-g4.png">
+                </div>
+                <div class="col-auto border border-secondary m-3 rounded text-center px-5 py-3">
+                    <img src="images/partner-g5.png">
+                </div>
+                <div class="col-auto border border-secondary m-3 rounded text-center px-5 py-3">
+                    <img src="images/partner2.png">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- If You Like This Grate Work ?? For You Site...section -->
+    <section class="custom-blue-bg py-5">
+        <div class="container position-relative mx-auto row justify-content-between align-items-center text-white">
+            <div class="col-7 p-0">
+                <i class="fas fa-phone-volume position-absolute telephone-icon"></i>
+                <p class="fs-2 m-0">If You Like This Grate Work ?? For You Site...</p>
+            </div>
+            <div class="col-3 text-end pe-0 pb-3">
+                <a class="btn bg-white btn btn-outline-primary custom-blue-text rounded-pill mt-4 px-4 fw-bold" href="#"
+                    role="button">Purchase Now</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- the footer section -->
+    <footer class="custom-black-bg py-5">
+        <div class="container pb-5 text-white">
+            <div class="row justify-content-between">
+                <div class="col-xl-3 col-5">
+                    <h2>Contact Info</h2>
+                    <hr class="custom-hr-bottom w-25 custom-blue-text">
+                    <p class="fw-light pt-2">
+                        <i class="fas fa-map-marker-alt pe-1"></i>
+                        123 Street Market, Life Plaza, New York
+                    </p>
+                    <p class="fw-light pt-2">
+                        <i class="fas fa-phone-volume pe-1"></i>
+                        987654321
+                    </p>
+                    <p class="fw-light pt-2">
+                        <i class="far fa-envelope pe-1"></i>
+                        team@gmail.com
+                    </p>
+                </div>
+                <div class="col-xl-3 col-5">
+                    <h2>Posts</h2>
+                    <hr class="custom-hr-bottom w-25 custom-blue-text">
+                    <div class="row border-bottom border-secondary justify-content-between mb-4 pb-4 pt-2">
+                        <div class="col-4">
+                            <a href="#"><img src="images/gallery2-1-360x260.png" class="h-100 w-100"></a>
+
+                        </div>
+                        <div class="col-8">
+                            <p class="mb-1"><a href="#" class="text-decoration-none text-white fw-bold">Four ways to
+                                    cheer and plan your self up on Blue</a> </p>
+                            <p class="text-secondary mb-0"><i class="far fa-calendar-alt pe-1"></i> December 19, 2018
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <a href="#"><img src="images/bg3-360x260.jpg" class="h-100 w-100"></a>
+
+                        </div>
+                        <div class="col-8">
+                            <p class="mb-1"><a href="#" class="text-decoration-none text-white fw-bold">Four ways to
+                                    cheer and plan your self up on Blue</a> </p>
+                            <p class="text-secondary mb-0"><i class="far fa-calendar-alt pe-1"></i> December 19, 2018
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-5">
+                    <h2>Popular</h2>
+                    <hr class="custom-hr-bottom w-25 custom-blue-text">
+                    <div class="row pt-5">
+                        <div class="col-4">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Accountancy</a>
+                        </div>
+                        <div class="col-3">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Affiliate</a>
+                        </div>
+                        <div class="col-3">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Branding</a>
+                        </div>
+                    </div>
+                    <div class="row pt-3 justify-content-between">
+                        <div class="col-3">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Construction</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Design</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Drupal</a>
+                        </div>
+                        <div class="col-3">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Education</a>
+                        </div>
+
+                    </div>
+                    <div class="row pt-3 justify-content-between">
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Graphics</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Joomla</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dar custom-small-font" href="#"
+                                role="button">Marketing</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Money</a>
+                        </div>
+
+                    </div>
+                    <div class="row pt-3 justify-content-between">
+                        <div class="col-1">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Tally</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Transform</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Website</a>
+                        </div>
+                        <div class="col-2">
+                            <a class="btn rounded-pill bg-white text-dark custom-small-font" href="#"
+                                role="button">Wordpress</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- the second footer -->
+    <footer class="custom-black-bg py-4 custom-blue-text fw-bold custom-box-shadow1 text-center">
+        <p class="m-0">© 2019 Developed By DTM Theme</p>
+    </footer>
+
+    <!-- the fixed arrow up button -->
+    <div class="position-fixed rounded-circle custom-blue-bg p-2 fs-2 text-center arrow-up">
+        <a href="index.html" class="text-decoration-none"><i class="fas fa-chevron-up text-white d-block"></i></a>
+    </div>
+
+
+
+
+    <!----------------------------------------------------------->
+    <!----------------------------------------------------------->
+    <!----------------------------------------------------------->
+    <!-- SCRIPT FILES -->
+    <!-- linking bootstrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- linking jquery.min.js -->
+    <!-- you have to link jquery BEFORE linking the owl.carousel.min.js or else it won't work -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- linking owl carousel owl.carousel.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- the owl carousel options -->
+    <!-- owl carousel navigation arrows
+ followed this tutorial from YouTube
+ https://www.youtube.com/watch?v=r5IPNFsTNRs&ab_channel=CandDev -->
+    <script>
+        const nextIcon = '<i class="fas fa-long-arrow-alt-right p-2"></i>';
+        const prevIcon = '<i class="fas fa-long-arrow-alt-left p-2"></i>';
+    </script>
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            margin: 30,
+            navText: [
+                prevIcon,
+                nextIcon,
+            ],
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                600: {
+                    items: 1,
+
+                },
+                1000: {
+                    items: 2,
+                }
+            }
+        })
+    </script>
+    <!-- linking script.js file -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
