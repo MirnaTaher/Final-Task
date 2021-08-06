@@ -75,7 +75,7 @@ function requiredFeild(){
 // check if the user starts inputting his data
 var valName = document.getElementById("formName").addEventListener("input", function (event) {
   var regExpName = /^[a-zA-Z ]{3,30}$/;
-  userName = event.target.value
+  userName = event.target.value.trim();
     if (regExpName.test(userName)) {
       removeError("formName")
       booleanName = true;
