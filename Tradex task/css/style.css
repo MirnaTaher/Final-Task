@@ -551,6 +551,8 @@ footer p a:hover {
 }
 
 /* giving transition duration 0.25s to multiple classes */
+.custom-card-size div,
+.custom-card-size:hover div,
 .custom-card-size2:hover .custom-div,
 .custom-card-size3:hover .custom-appearing-card2,
 .custom-black-bg,
